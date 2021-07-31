@@ -1,3 +1,5 @@
+import {profileDetails} from "../const/details";
+
 export const HomePage = () => {
-    return <h1>Test</h1>
+    return <h1>{profileDetails.firstName}</h1>
 }
