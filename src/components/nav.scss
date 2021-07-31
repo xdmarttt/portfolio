@@ -21,6 +21,11 @@
         transition: .2s;
       }
     }
+  }
 
+  @media (max-width: 658px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
