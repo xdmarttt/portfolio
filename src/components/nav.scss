@@ -11,13 +11,16 @@
     ul li {
       font-weight: 600;
       display: inline;
-      margin: 0 24px;
-      padding: 0 8px;
+      margin: 0 12px;
+      padding: 12px 24px;
       cursor: pointer;
+      border-radius: 24px;
+      &:hover {
+        background-color: $primary;
+        color: $white;
+        transition: .2s;
+      }
     }
 
-    ul li:hover {
-      background: $primary;
-    }
   }
 }
