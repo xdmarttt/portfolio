@@ -1,3 +1,13 @@
 .header-container {
+  padding: 0 14%;
+  display: flex;
 
+  .header-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .header-img-container {
+    width: 100%;
+  }
 }
