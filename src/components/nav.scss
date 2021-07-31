@@ -1,3 +1,5 @@
+@import '../assets/styles/colors';
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -7,10 +9,15 @@
 
   .nav-menu {
     ul li {
+      font-weight: 600;
       display: inline;
       margin: 0 24px;
       padding: 0 8px;
       cursor: pointer;
+    }
+
+    ul li:hover {
+      background: $primary;
     }
   }
 }
