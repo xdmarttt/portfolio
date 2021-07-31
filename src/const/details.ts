@@ -1,5 +1,5 @@
 export const profileDetails = {
-    firstName: "Mart",
-    lastName: "Macion",
-    emailAddress: "macionmart@gmail.com",
+    firstName: 'Mart',
+    lastName: 'Macion',
+    emailAddress: 'macionmart@gmail.com',
 }

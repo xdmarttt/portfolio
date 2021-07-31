@@ -1,5 +1,5 @@
-import {profileDetails} from "../const/details";
+import {Header} from '../components/header';
 
 export const HomePage = () => {
-    return <h1>{profileDetails.firstName}</h1>
+    return <Header />
 }
