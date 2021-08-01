@@ -1,16 +1,39 @@
 import './nav.scss';
-import logo from '../assets/images/logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBriefcase, faPhone} from '@fortawesome/free-solid-svg-icons';
+import {faAddressCard} from "@fortawesome/free-regular-svg-icons";
+
+
+const navMenu = [
+    {
+        label: 'About',
+        icon: faAddressCard
+    },
+    {
+        label: 'Works',
+        icon: faBriefcase
+    },
+    {
+        label: 'Contact',
+        icon: faPhone
+    }
+]
 
 export const Nav = () => {
     return <div className="nav-container">
         <div className="nav-logo">
-            <img src={logo} alt=""/>
+            <h4>mrtmcns</h4>
         </div>
         <div className="nav-menu">
             <ul>
-                <li>Home</li>
-                <li>Works</li>
-                <li>Contact</li>
+                {
+                    navMenu.map((menu, index) => {
+                        return <li key={index}>
+                            <span className="nav-icon"><FontAwesomeIcon icon={menu.icon}/></span>
+                            <span className="nav-text">{menu.label}</span>
+                        </li>
+                    })
+                }
             </ul>
         </div>
     </div>
