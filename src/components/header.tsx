@@ -1,6 +1,6 @@
 import './header.scss';
 import {profileDetails} from '../const/details';
-import logo from '../assets/images/logo.svg'
+import logo from '../assets/images/transparent-mart.png';
 
 export const Header = () => {
     return <div className="header-container">
@@ -10,11 +10,11 @@ export const Header = () => {
                 <h2>{profileDetails.lastName}</h2>
             </div>
             <div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <p>Hi! I'm Mart a 24-year-old dev. I strive to give the best in my craft to create extra-ordinary technology for the global future. And yes, I write codes.</p>
             </div>
         </div>
         <div className="header-img-container">
-            <img src={logo} alt=""/>
+            <div className="header-img"></div>
         </div>
     </div>
 }

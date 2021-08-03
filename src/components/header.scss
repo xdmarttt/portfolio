@@ -5,9 +5,20 @@
   .header-details {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    h2 {
+      font-size: 4rem;
+      margin: 12px 0;
+    }
   }
   .header-img-container {
+    content: '';
     width: 100%;
+    .header-img {
+      height: 500px;
+      background-image: url("../assets/images/transparent-mart.png");
+      background-size: 700px;
+      background-position: -130px -120px;
+    }
   }
 }
