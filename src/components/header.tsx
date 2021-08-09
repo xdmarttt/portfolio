@@ -1,8 +1,13 @@
 import './header.scss';
-import {profileDetails} from '../const/details';
+import {profileDetails, socialMediaList} from '../const/details';
 import logo from '../assets/images/transparent-mart.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Header = () => {
+    const redirectToLink = (link: string) => {
+        window.location.href = link
+    }
+
     return <div className="header-container">
         <div className="header-details">
             <div>
@@ -14,7 +19,19 @@ export const Header = () => {
             </div>
         </div>
         <div className="header-img-container">
-            <div className="header-img"></div>
+            <div className="header-img">
+                <div className="social-media">
+                        {
+                            socialMediaList.map(socialMedia => {
+                                return <div className="social-media-content" onClick={() => redirectToLink(socialMedia.link)}>
+                                    <FontAwesomeIcon icon={socialMedia.icon}></FontAwesomeIcon>
+                                </div>
+                            })
+                        }
+                </div>
+            </div>
+            <div className="header-bg-circle">
+            </div>
         </div>
     </div>
 }

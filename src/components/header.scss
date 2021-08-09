@@ -1,6 +1,6 @@
 .header-container {
   display: flex;
-  padding: 0 14%;
+  padding-left: 14%;
 
   .header-details {
     display: flex;
@@ -14,11 +14,57 @@
   .header-img-container {
     content: '';
     width: 100%;
+    position: relative;
     .header-img {
       height: 500px;
       background-image: url("../assets/images/transparent-mart.png");
       background-size: 700px;
       background-position: -130px -120px;
+      .social-media {
+        position: absolute;
+        bottom: 80px;
+        right: 130px;
+        .social-media-content {
+          color: white;
+          font-size: 2rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .header-bg-circle {
+      width: 570px;
+      height: 500px;
+      background: #11998e;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      border-top-left-radius: 85%;
+      border-top-right-radius: 85%;
+      border-bottom-left-radius: 85%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+
+    .header-img-container {
+      display: none;
+    }
+
+    .header-img {
+      display: none;
+      position: relative;
+    }
+
+    .header-bg-circle {
+      width: 200px;
+      height: 130px;
     }
   }
 }

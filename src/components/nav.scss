@@ -41,7 +41,9 @@
     justify-content: center;
     align-items: center;
     .nav-logo {
-      background-color: $primary;
+      background: #11998e;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       padding: 12px 0;
       width: 100%;
     }
@@ -61,7 +63,7 @@
         &:hover {
           background: $white;
           color: $font-paragraph;
-          border-bottom: solid $primary 2px;
+          border-bottom: solid $font-paragraph 4px;
           border-radius: 0;
         }
       }
