@@ -1,8 +1,8 @@
 import {Header} from '../components/header';
 import {Nav} from "../components/nav";
-import './home.scss';
+import './home.module.scss';
 
-export const HomePage = () => {
+export const Home = () => {
     return <div className="home-container">
         <Nav />
         <Header />

@@ -1,6 +1,4 @@
-import './header.scss';
 import {profileDetails, socialMediaList} from '../const/details';
-import logo from '../assets/images/transparent-mart.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Header = () => {
@@ -8,7 +6,7 @@ export const Header = () => {
         window.location.href = link
     }
 
-    return <div className="header-container">
+    return <div className="header">
         <div className="header-details">
             <div>
                 <h2>{profileDetails.firstName}</h2>
@@ -22,8 +20,8 @@ export const Header = () => {
             <div className="header-img">
                 <div className="social-media">
                         {
-                            socialMediaList.map(socialMedia => {
-                                return <div className="social-media-content" onClick={() => redirectToLink(socialMedia.link)}>
+                            socialMediaList.map((socialMedia, index) => {
+                                return <div className="social-media-content" key={index} onClick={() => redirectToLink(socialMedia.link)}>
                                     <FontAwesomeIcon icon={socialMedia.icon}></FontAwesomeIcon>
                                 </div>
                             })

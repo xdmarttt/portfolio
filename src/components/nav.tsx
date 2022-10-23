@@ -1,4 +1,3 @@
-import './nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { navMenu } from '../const/nav';
 
