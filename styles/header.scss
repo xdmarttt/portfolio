@@ -19,7 +19,8 @@
         height: 500px;
         background-image: url("../assets/images/transparent-mart.png");
         background-size: 700px;
-        background-position: -130px -120px;
+        background-position: center -130px;
+        background-repeat: no-repeat;
         .social-media {
           position: absolute;
           bottom: 80px;

@@ -1,5 +1,5 @@
 import '../styles/main.scss';
-import {Home} from "../src/pages/home";
+import {Home} from "./home";
 
 export default function MyApp() {
   return <Home></Home>
