@@ -1,7 +1,5 @@
-import MyApp from "./_app"
+import MyApp from "./_app";
 
 export default function HomePage() {
-  return (<MyApp></MyApp>);
+  // return <MyApp></MyApp>;
 }
-
-

@@ -22,7 +22,7 @@
   },
   "include": [
     "src"
-  ],
+, "pages/home.tsx", "pages/home.tsx", "pages/App.tsx", "pages/App.tsx"  ],
   "exclude": [
     "node_modules"
   ]
